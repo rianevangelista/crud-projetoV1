@@ -11,23 +11,42 @@
 </head>
 <body>
     <div>
-        <span>Novo Item | <a href="#">Listar Itens</a></span>
+        <span><a href="#">Novo Item</a> | <a href="tabelaItens.html">Listar Itens</a></span>
         <h1>Cadastrar Item</h1>
-        <div>Modelo: <input type="text" placeholder="Modelo" name="modelo"></input></div>
-        <div>Marca: <input type="text" placeholder="Marca" name="marca"></input></div>
-        <div>Tipo: <input type="select"></input></div>
-        <div>Quantidade: <input type=""></input></div>
-        <div>Condição: <input type="radio"></input></div>
-        <div>+Diferenciais: 
-            <input type="checkbox" name="opcao1" value="1">Full HD</input>
-            <input type="checkbox" name="opcao2" value="2">5G</input>
-            <input type="checkbox" name="opcao2" value="2">Duall Chip</input>
-        
-        </div>
-        <span>
-            <button>Cadastrar</button>
-            <button>Limpar</button>
-        </span>
+        <form action="" method="GET">
+            <div>Modelo: 
+                <input type="text" placeholder="Modelo" name="modelo"></input>
+            </div>
+
+            <div>Marca: 
+                <input type="text" placeholder="Marca" name="marca"></input>
+            </div>
+
+            <div>Tipo:             
+                <select name="tipo">
+                    <option>--Selecione opcao--</option>
+                </select>
+            </div>
+
+            <div>Quantidade:
+            </div>
+
+            <div>Condição: 
+                <input type="radio" name="opcao" value="1">Novo</input>
+                <input type="radio" name="opcao" value="2">Usado</input>
+            </div>
+
+            <div>+Diferenciais: 
+                <input type="checkbox" name="opcao1" value="1">Full HD</input>
+                <input type="checkbox" name="opcao2" value="2">5G</input>
+                <input type="checkbox" name="opcao2" value="2">Duall Chip</input>
+            </div>
+
+            <span>
+                <input type="submit" value="Cadastrar"></input>
+                <input type="reset" value="Limpar"></input>
+            </span>
+        </form>
     </div>
 
 </body>
